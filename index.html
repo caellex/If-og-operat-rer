@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS er absolutt ikke noe for meg foreløpig */
+    .result {
+        border: solid lightgray 3px;
+        width: 200px;
+        height: 300px;
+        padding: 5px;
+        background-image: url('../dark.jpg');
+        color: white;
+        text-shadow: black 0.7px 0.7px;
+        font-size: xx-large;
+    }
+</style>
+
+
+<body>
+    <div id="resultBox" class="result">Resultat: </div>
+    <script>
+
+        // Variabler for å leke seg med true/false med if statements
+        let numberOne = 21;
+        let numberTwo = 21;
+
+        let textNumber = "30";
+
+        // Kjører en funksjon for å printe ut resultat - NotEqualTo er if/else funksjon.
+        check()
+        function check() {
+            NotEqualTo();
+
+        }
+        // True funksjon
+        function SetTextToTrue() {
+            document.getElementById('resultBox').innerHTML += `<br>${true}`;
+        }
+        // False funksjon
+        function SetTextToFalse() {
+            document.getElementById('resultBox').innerHTML += `<br>${false}`;
+        }
+        // For å sjekke verdier opp mot true-false
+        function NotEqualTo() {
+            if (numberOne > 20 && numberOne == numberTwo) {
+                SetTextToTrue()
+            } else {
+                SetTextToFalse()
+
+            }
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
